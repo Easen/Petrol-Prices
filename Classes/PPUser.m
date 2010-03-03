@@ -38,7 +38,7 @@ const PPUser *fPPUserSharedInstance = nil;
 + (PPUser *) sharedInstance {
 	if (fPPUserSharedInstance == nil)
 		fPPUserSharedInstance = [[PPUser alloc] init];
-	return fPPUserSharedInstance;
+	return (PPUser *)fPPUserSharedInstance;
 }
 
 - (void) loginWithUsername:(NSString *)aUsername Password:(NSString *)aPassword RememberDetails:(bool)aRememeber WithDelegate:(id)delegate {

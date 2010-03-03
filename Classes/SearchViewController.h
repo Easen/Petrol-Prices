@@ -26,7 +26,7 @@
 	PPFuelType *selectedFuelType;
 	BOOL locateMeCalled;
 }
-@property (nonatomic) PPFuelType *selectedFuelType;
+@property (nonatomic, assign) PPFuelType *selectedFuelType;
 
 - (IBAction) search:(id)sender;
 - (IBAction) locateMe:(id)sender;

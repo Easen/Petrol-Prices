@@ -28,7 +28,7 @@ const Petrol_PricesAppDelegate *fPetrol_PricesAppDelegateSharedInstance;
 }
 
 + (Petrol_PricesAppDelegate *) sharedInstance {
-	return fPetrol_PricesAppDelegateSharedInstance;
+	return (Petrol_PricesAppDelegate *)fPetrol_PricesAppDelegateSharedInstance;
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {

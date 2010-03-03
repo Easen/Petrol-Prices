@@ -36,7 +36,7 @@ const PPFuelTypeController *fPPFuelTypeControllerSharedInstance = nil;
 + (PPFuelTypeController *) sharedInstance {
 	if (fPPFuelTypeControllerSharedInstance == nil)
 		fPPFuelTypeControllerSharedInstance = [[PPFuelTypeController alloc] init];
-	return fPPFuelTypeControllerSharedInstance;
+	return (PPFuelTypeController *)fPPFuelTypeControllerSharedInstance;
 }
 
 - (PPFuelType *)getFuelTypeForId:(NSInteger) aId {

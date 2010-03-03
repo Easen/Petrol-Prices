@@ -43,7 +43,7 @@ const PPSearch *fPPSearchSharedInstance;
 + (PPSearch *) sharedInstance {
 	if (fPPSearchSharedInstance == nil)
 		fPPSearchSharedInstance = [[PPSearch alloc] init];
-	return fPPSearchSharedInstance;
+	return (PPSearch *)fPPSearchSharedInstance;
 }
 
 - (void) searchWithPostcode:(NSString *)aPostcode 

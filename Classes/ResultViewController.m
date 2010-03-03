@@ -109,7 +109,7 @@
 	PPFuelStation *fuelStation = annotation;
 	NSString *name = [NSString stringWithFormat:@"%@ - %@", [fuelStation name], [fuelStation fuelType]];
 	PPAnnotationView *ppAV;
-	ppAV = [mapView dequeueReusableAnnotationViewWithIdentifier:name];
+	ppAV = (PPAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:name];
 	if (ppAV == nil) {
 		ppAV = [[PPAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:name];
 	}
