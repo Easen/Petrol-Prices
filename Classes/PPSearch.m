@@ -127,7 +127,7 @@ const PPSearch *fPPSearchSharedInstance;
 					fuelStation = [[PPFuelStation alloc] initWithCoordinate:coord];
 				}
 				
-				splitLine = [trimmedLine componentsSeparatedByString:@"createMarker("];
+				splitLine = [trimmedLine componentsSeparatedByString:@"createPetrolMarker("];
 				if([splitLine count] == 2) {
 					NSArray *data = [[splitLine objectAtIndex:1] componentsSeparatedByString:@","];
 					NSString *address = [NSString stringWithFormat:@"%@, %@, %@, %@",
